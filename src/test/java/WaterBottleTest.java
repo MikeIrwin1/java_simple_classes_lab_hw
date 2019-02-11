@@ -29,4 +29,11 @@ public class WaterBottleTest {
         assertEquals(0, waterBottle.getVolume());
     }
 
+    @Test
+    public void cannot_drink_beyond_0(){
+        waterBottle.empty();
+        waterBottle.takeDrink();
+        assertEquals(0, waterBottle.getVolume());
+    }
+
 }
