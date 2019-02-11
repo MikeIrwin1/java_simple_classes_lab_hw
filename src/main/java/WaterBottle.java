@@ -11,7 +11,12 @@ public class WaterBottle {
     }
 
     public void takeDrink(){
-        this.volume -= 10;
+        if (this.volume == 0){
+            return;
+        }
+        else {
+            this.volume -= 10;
+        }
     }
 
     public void empty(){
